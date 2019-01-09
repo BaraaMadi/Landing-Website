@@ -1,1 +1,583 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- to excute bootstrap when use IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- must use for Frist mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>bootstrap 3</title>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<!-- to support media Queris -->
+        <script src="../js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!---------------- Navbar -------------------> 
+
+        <nav class="navbar  navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar-data" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-tasks" style="color: white;"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Baraa
+                        <span>Inc&#46;</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="mynavbar-data">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">company</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Explnation</a></li>
+                                <li><a href="#">Solve HW</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">more</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!---------------- Slidebar -------------------> 
+
+        <div id="myslidee" class="carousel slide" data-ride="carousel">
+            <!-- Indicators  وهي النقاط التنحط في الاسفل -->
+            <ol class="carousel-indicators hidden-xs">
+                <li data-target="#myslidee" data-slide-to="0" class="active"></li>
+                <li data-target="#myslidee" data-slide-to="1"></li>
+                <li data-target="#myslidee" data-slide-to="2"></li>
+                <li data-target="#myslidee" data-slide-to="3"></li>
+                <li data-target="#myslidee" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <!-- 5 images -->
+                <div class="item active">
+                    <img src="../images/bg-slide-01.jpg" alt="p1" style="height:700px; margin: 0 auto; width: 100%;">
+                    <div class="carousel-caption hidden-xs">
+                        <h1> ROCK PARTY</h1>
+                        <p class="lead">Accessibility issue
+                            The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
+                        <div class="btn btn-primary">Read Now</div>
+                        <div class="btn btn-danger">Buy Now</div>
+                    </div>
+                </div> 
+                <div class="item">
+                    <img src="../images/bg-slide-02.jpg" alt="p2" style="height:700px; margin: 0 auto; width: 100%;">
+                    <div class="carousel-caption hidden-xs">
+                        <h1>GLASSES</h1>
+                        <p class="lead">Accessibility issue
+                            The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
+                    </div>
+                </div> 
+                <div class="item">
+                    <img src="../images/blog1.jpg" alt="p3" style="height:700px; margin: 0 auto; width: 100%;">
+                    <div class="carousel-caption hidden-xs">
+                        <h1>CLASIC PARTY</h1>
+                        <p class="lead">Accessibility issue
+                            The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
+                    </div>
+                </div> 
+                <div class="item">
+                    <img src="../images/blog2.jpg" alt="p4" style="height:700px; margin: 0 auto; width: 100%;">
+                    <div class="carousel-caption hidden-xs">
+                        <h1>EVENT 1</h1>
+                        <p class="lead">Accessibility issue
+                            The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/blog3.jpg" alt="p5" style="height:700px; margin: 0 auto; width: 100%;">
+                    <div class="carousel-caption hidden-xs">
+                        <h1> EVEVT 2</h1>
+                        <p class="lead">Accessibility issue
+                            The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myslidee" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myslidee" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!---------------- About -------------------> 
+
+        <section class="about text-center">
+            <div class="container">
+                <h1 class="hidden-xs">Meet our new template <span>baraa inc&#46;</span></h1>
+                <h3 class="visible-xs">Meet our new template <span>baraa inc&#46;</span></h3>
+                <p class="lead">hello let me interoduce my template baraa inc&#46; created with all the love with <strong>bootstrap 3.3.7</strong></p>
+            </div>
+        </section>
+
+        <!---------------- Features -------------------> 
+        <section class="features text-center">
+            <div class="container">
+                <h1>my features</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feat">
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                            <h3>100% responsive</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feat">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            <h3>retina ready</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+                        </div>
+                    </div><div class="col-lg-3 col-md-6">
+                    <div class="feat">
+                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                        <h3>awesome display</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feat">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                            <h3>well documented</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------- Testimonials  -------------------> 
+        <section class="testimonials  text-center">
+            <div class="container">
+                <h1>what our clients say?</h1>
+                <div id="mytestimonials" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <p class="lead"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  
+                            </p>
+                            <span>fatimah ahmad</span>
+                        </div> 
+                        <div class="item">
+                            <p class="lead"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took . 
+                            </p>
+                            <span>sarah alnaami</span>
+                        </div> 
+                        <div class="item">
+                            <p class="lead"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  
+                            </p>
+                            <span>maha alhoshani</span>
+                        </div> 
+                        <div class="item">
+                            <p class="lead"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  
+                            </p>
+                            <span>lujain almiman</span>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mytestimonials" data-slide-to="0" class="active">
+                            <img src="../images/p1.png" alt="p1">
+                        </li>
+                        <li data-target="#mytestimonials" data-slide-to="1">
+                            <img src="../images/p2.png" alt="p2">
+                        </li>
+                        <li data-target="#mytestimonials" data-slide-to="2">
+                            <img src="../images/p3.png" alt="p3">
+                        </li>
+                        <li data-target="#mytestimonials" data-slide-to="3">
+                            <img src="../images/pp4.JPG" alt="p4">
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!---------------- Price Table  -------------------> 
+        <section class="price-table text-center">
+            <div class="container">
+                <h1> our amazing prices</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="price-box" id="personal">
+                            <h1>Personal</h1>
+                            <h1 class="price">$12</h1>
+                            <p>/Mo billed annually </p>
+                            <p><span>$19</span> / billed Monthly</p>
+                            <button type="button" class="btn btn-default" ><a href="" class="upgrade">upgrade</a>
+                                <span class=" glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="price-box" id="startup">
+                            <h1>startup</h1>
+                            <h1 class="price">$19</h1>
+                            <p>/Mo billed annually </p>
+                            <p><span>$35</span> / billed Monthly</p>
+                            <button type="button" class="btn btn-default" ><a href="" class="upgrade">upgrade</a>
+                                <span class=" glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12" >
+                        <div class="price-box" id="business">
+                            <h1>business</h1>
+                            <h1 class="price">$39</h1>
+                            <p>/Mo billed annually </p>
+                            <p><span>$59</span> / billed Monthly</p>
+                            <button type="button" class="btn btn-default" ><a href="" class="upgrade">upgrade</a>
+                                <span class=" glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12" >
+                        <div class="price-box" id="free">
+                            <h1>free</h1>
+                            <h1 class="price ">$0</h1>
+                            <button type="button" class="btn btn-default free" ><a href="" class="upgrade">try now</a>
+                                <span class=" glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!---------------- About again -------------------> 
+
+        <section class="about text-center">
+            <div class="container">
+                <h1 class="hidden-xs">Meet our new template <span>baraa inc&#46;</span></h1>
+                <h3 class="visible-xs">Meet our new template <span>baraa inc&#46;</span></h3>
+                <p class="lead">hello let me interoduce my template baraa inc&#46; created with all the love with <strong>bootstrap 3.3.7</strong></p>
+            </div>
+        </section>
+
+        <!---------------- Our Team  -------------------> 
+        <section class="our-team text-center">
+            <div class="team">
+                <div class="container">
+                    <h1>meet our awesome team</h1>
+                    <div class="row">
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="person">
+                                <img class="img-circle" src="../images/p1.jpg" alt="chirs coyier">
+                                <h3>chirs coyier</h3>
+                                <p> man this is chirs coyier the founder of the amazing websites css tricks woooo</p>
+                                <a href="" id="google1" ><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                <a href=""><i class="fa fa-facebook-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-twitter-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-youtube-square fa-lg"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="person">
+                                <img class="img-circle" src="../images/p2.jpg" alt="steve jobs">
+                                <h3>steve jobs</h3>
+                                <p>this is amazing hacker man man with a much knowledge in hacking systems</p>
+                                <a href="" id="google1" ><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                <a href=""><i class="fa fa-facebook-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-twitter-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-youtube-square fa-lg"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="person">
+                                <img  class="img-circle" src="../images/p3.jpg" alt="leah culver">
+                                <h3>leah culver</h3>
+                                <p>this is amazing hacker man man with a much knowledge in hacking systems</p>
+                                <a href="" id="google1" ><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                <a href=""><i class="fa fa-facebook-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-twitter-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-youtube-square fa-lg"></i></a>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="person">
+                                <img class="img-circle" src="../images/p4.jpg" alt="marissa mayer">
+                                <h3>marissa mayer</h3>
+                                <p>this is amazing hacker woman with a much knowledge in hacking systems</p>
+                                <a href="" id="google1" ><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                <a href=""><i class="fa fa-facebook-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-twitter-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-youtube-square fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------- Subscribe  -------------------> 
+
+        <section class="subscribe text-center">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-md-5 hidden-xs">
+                        <img class="img-responsive center-block"  src="../images/m3.png" width="256">
+                    </div>
+
+                    <div class="col-md-7">
+                        <h1>email newsletter</h1>
+                        <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                        <p class="">sign up for seosight content, updates, surveys & offers dont worry about spam we hate it too!</p>
+                        <form class="form-inline">
+                            <input class="form-control input-lg" type="text" placeholder="Your Email Address">
+                            <button class="btn btn-danger btn-lg"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------- Skills  -------------------> 
+
+        <section class="skills ">
+            <div class="container">
+                <h1 class="text-center">My Skills</h1>
+                <div class="row">
+
+                    <!-- Start Progress Skills -->
+
+                    <div class="col-md-5">
+                        <div class="skills-progress">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-c1 progress-bar-striped active" role="progressbar" aria-valuenow="80" style="width: 80%;" aria-valuemin="0" aria-valuemax="100" >
+                                    HTML5 / CSS3  
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-c2 progress-bar-striped active" role="progressbar" aria-valuenow="50" style="width: 50%;" aria-valuemin="0" aria-valuemax="100" >
+                                    PHP / MYSQL  
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-c3 progress-bar-striped active" role="progressbar" aria-valuenow="30" style="width: 30%;" aria-valuemin="0" aria-valuemax="100" >
+                                    JAVASCRIPT / JQUERE  
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-c4 progress-bar-striped active" role="progressbar" aria-valuenow="40" style="width: 40%;" aria-valuemin="0" aria-valuemax="100" >
+                                    WORDPRESS  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Progress Skills -->
+
+                    <!-- Start Info  -->
+
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="skills-info">
+                            <h3>about the team</h3>
+                            <p class="lead">we are specialised desiginng and programming team passionate about web design and creatin digital ideas we will transfer your ideas to a digital your wish to true. </p>
+                            <button type="button" class="btn btn-color">talk with a professional</button>
+                        </div>
+
+                    </div>
+
+                    <!-- End Info -->
+
+                </div>
+            </div>
+        </section>
+
+        <!---------------- Contact Us  -------------------> 
+        <section class="contact-us text-center">
+            <div class="fields">
+                <div class="container">
+                    <h1>get in touch with us</h1>
+                    <p >if you have quer/guestions/concerns regardinf your health and sexuality don't hesitate to get in touch.</p>
+                    <!-- Start contact form -->
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1">
+                            <form role="form">
+                                <div class="form-group text-left">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your Name" id="name">
+                                    <!-- class to make input large "input-lg" 
+<input type="text" class="form-control input-lg" placeholder="Enter Your Name" id="name">
+-->
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="email">Email:</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your Email" id="email">
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="comment">Message:</label>
+                                    <textarea class="form-control" rows="5"  placeholder="Enter Your Message" id="comment"></textarea>
+
+                                </div>
+                                <div class="form-group text-left">
+                                    <input type="submit" class="form-control input-lg" value="submit">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- End contact form -->
+
+                        <div class="col-md-6">
+                            <div class="help">
+                                <p> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    NA 345 park ave</p>
+                            </div> 
+                            <div class="help">
+                                <p> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    baraa madi</p>
+                            </div> 
+                            <div class="help">
+                                <p> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    +966 553 785 244</p>
+                            </div> 
+                            <div class="help">
+                                <p> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    baraa@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!---------------- Our Clients  -------------------> 
+        <section class="our-clients">
+            <div class="container">
+                <div class="list-unstyled">
+                    <li class="col-md-2 col-xs-4">
+                        <img class="img-responsive center-block" src="../images/drees%20homes.png" alt="drees homes">
+                    </li>
+                    <li class="col-md-2 col-xs-4">
+                        <img class="img-responsive center-block" src="../images/selex%20ES.png" alt="selex ES"></li>
+                    <li class="col-md-2 col-xs-4">
+                        <img class="img-responsive center-block" src="../images/bakery.png" alt="bakery"></li>
+                    <li class="col-md-2 col-xs-4">
+                        <img class="img-responsive center-block" src="../images/adamigo.png" alt="ADamigo"></li>
+                    <li class="col-md-2 col-xs-4">
+                        <img class="img-responsive center-block" src="../images/athletics.png" alt="athletics"></li>
+                    <li class="col-md-2 col-xs-4">
+                        <img class="img-responsive center-block" src="../images/tamansari.png" alt="tamansari"></li>
+                </div>
+            </div>
+        </section>
+        <!---------------- Footer  -------------------> 
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <!--  Start Sitemap  -->
+                    <div class="col-lg-4 col-md-6">
+                        <h3>sitemap</h3>
+                        <ul class="list-unstyled three-columns">
+                            <li><a href="">home</a></li>
+                            <li><a href="">about</a></li>
+                            <li><a href="">Features</a></li>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Price Table</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Subscribe</a></li>
+                            <li><a href="">Skills</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                        <ul class="list-unstyled social-links">
+                            <li><a href=""><img src="../images/social-media/flickr-128.png"></a></li>
+                            <li><a href=""><img src="../images/social-media/iconfinder_Facebook_1288098.png"></a></li>
+                            <li><a href=""><img src="../images/social-media/iconfinder_Instagram_1288103.png"></a></li>
+                            <li><a href=""><img src="../images/social-media/iconfinder_Twitter_1288111.png"></a></li>
+                            <li><a href=""><img src="../images/social-media/iconfinder_Youtube_1288115.png"></a></li>
+                            <li><a href=""><img src="../images/social-media/Vine-128.png"></a></li>
+                            <li><a href=""><img src="../images/social-media/w-128.png"></a></li>
+
+                        </ul>
+                    </div>
+                    <!--  End Sitemap  -->
+
+                    <div class="col-lg-4 col-md-6">
+                        <!--  Start Articles  -->
+                        <h3>lastest articles</h3>
+
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img class="media-object" src="../images/Chat.png" alt="articles" width="60px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">programming</h4>
+                                <p>this is some text about programming describe the media of bootstrap. </p>
+                            </div>
+                        </div> 
+
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img class="media-object" src="../images/Contact.png" alt="articles" width="60px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">web develpment</h4>
+                                <p>this is some text about programming describe the media of bootstrap. </p>
+                            </div>
+                        </div> 
+
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img class="media-object" src="../images/Faq.png" alt="articles" width="60px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">web design</h4>
+                                <p>this is some text about programming describe the media of bootstrap. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  End Articles  -->
+
+                    <!--  Start Links  -->
+                    <div class="col-lg-4">
+                        <h3>our awesome work</h3>
+                        <img class="img-thumbnail" src="../images/b1.jpg">
+                        <img class="img-thumbnail" src="../images/b2.jpg">
+                        <img class="img-thumbnail" src="../images/b3.png">
+                        <img class="img-thumbnail" src="../images/b4.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright text-center">
+                Copyright &copy; 2018 <span>Your Template Name</span>.Inc
+            </div>
+        </section>
+        <!-- to work bootstrap must use jQuery + put before bootstrap file -->    
+        <script src="../js/jQueryv-3.3.1.js"></script> 
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/plugin.js"></script>
+
+
+    </body>
+</html>
