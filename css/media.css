@@ -1,0 +1,67 @@
+/* Start Media Query */
+
+/* Smart Phones & Tablets */
+@media (max-width:767px) {
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .features .feat p {
+        line-height: 2.5em;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .price-table .price-box {
+        width:55%;
+        margin: 0 auto 15px;
+
+    }
+    .our-team .team .person p {
+        width: 53%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subscribe .form-control {
+        margin: 20px auto;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .subscribe button{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .navbar-fixed-top .navbar-collapse, 
+    .navbar-fixed-bottom .navbar-collapse {
+        max-height: none;
+    }
+    .skills .skills-progress {
+        margin-bottom: 50px;    
+    }
+    .contact-us .fields form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-us .fields .contact-info .help {
+        width: 46%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer .media h4.media-heading {
+        font-size: 16px;
+    }
+}
+
+/* Small Screen */
+@media (min-width:768px) and (max-width:991px) {
+
+}
+/* Medium Screen */
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+/* Large Screen*/
+@media (min-width:1200px){
+
+}
+/* End Media Query */
