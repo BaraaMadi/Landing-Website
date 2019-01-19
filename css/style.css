@@ -22,62 +22,6 @@ h1 { color: #296F42;font-family:head1;font-weight: bold;}
 h3{color: #B1A03E;font-family:head3;}
 /* Grid System */
 
-.row {
-    margin-top: 50px;
-}
-.grid-box {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-family: fantasy;
-
-}
-
-.color-r1 {
-    background-color: #fbc6bd;
-    color: #e32561;
-    transform: scale(1);
-    transition: all 1s ease-in-out;
-}
-.color-r2{
-    background-color: #83c2a8;
-    color: #27b990 ;
-    transform-style: preserve-3d;
-    transform: scale(1);
-    transition: all 1s ease-in-out;
-}
-.color-r2:hover, .color-r1:hover{
-    animation: color1 1s alternate infinite;
-}
-
-
-@keyframes color1 {
-    from { 
-        transform: scale(1);
-    }
-    to {
-        transform:scale(1.2);
-    }
-}
-
-.warning {
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-}
-.product{
-    padding: 10px;
-    background: #333;
-    color: white;
-    margin-bottom: 10px;
-    min-height: 100px;
-}
-.test {
-    height: 2000px;
-    background: #F6F6F6;
-    line-height: 300px;
-}
-
-
 /***************** Start Overriding Bootstrap ************/
 /* navbar */
 
@@ -136,7 +80,6 @@ h3{color: #B1A03E;font-family:head3;}
     margin-top: 12px;
 }
 
-
 /* Start Slidebar */
 .carousel-caption {
     bottom: 120px; 
@@ -158,9 +101,49 @@ h3{color: #B1A03E;font-family:head3;}
     width: 16px;
     background: #296F42;
 }
+.carousel-inner > .item > img {
+    height:700px; margin: 0 auto; width: 100%;
+}
 /* End Slidebar */
 
 /***************** End Overriding Bootstrap ************/
+
+/* Start Option Box */
+
+.option-box {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    z-index: 999;
+}
+.option-box .color-option {
+    float: left;
+    background: #6F2833;
+    color: #9d9d9d;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #296F42;
+    display: none;
+}
+.option-box .color-option h4 { 
+    font-size: 16px;
+    font-family: navbar;
+    padding-bottom: 5px;
+}
+.option-box .color-option ul li {
+    width: 20px;
+    height: 20px;
+    background: #296F42;
+    display: inline-block;
+    margin-right: 3px;
+}
+.option-box .gear-check {
+    padding: 5px;
+    background: #296F42;
+    color: white;
+    cursor: pointer;
+}
+/* End Option Box */
 
 /* Start Section About */
 
@@ -325,7 +308,7 @@ h3{color: #B1A03E;font-family:head3;}
     font-weight: 500;
 }
 .price-table .price-box button {
-    margin: 6px 0;
+    margin: 13px 0;
     padding: 8px 30px;
     border-radius: 6px;
     background: #ccc;
@@ -354,55 +337,6 @@ h3{color: #B1A03E;font-family:head3;}
 #business { background-color: #FFA358; }
 #free { background-color: rgb(242, 220, 206); }
 
-/*
-#black-box {
-background:none;
-border: none;
-height: auto;
-margin-left: -97px;
-padding: 12px 0px;
-}
-#black-box p, #color-box p{
-font-size: 14px;
-font-weight: 700;
-margin: 0px;
-color: rgb(107, 89, 129);
-}
-#color-box {
-background:white;
-border: none;
-height: auto;
-margin-left: -97px;
-padding: 12px 0px;
-overflow: hidden;
-border-radius:1px;
-}
-.price-table .more-details {
-background: #DAD5DF;
-position: absolute;
-z-index: -1;
-top: 400px;
-left: -100px;
-width: 1618.2px;
-padding-top: 60px;
-padding-bottom: 20px;
-}
-
-.col-lg-5ths {
-position: relative;
-min-height: 1px;
-padding-right: 15px;
-padding-left: 18px;
-}
-
-@media (min-width: 1200px) {
-.col-lg-5ths {
-width: 20%;
-float: left;
-left: -8%;
-}
-}
-*/
 /* End Section Price Table */
 
 
@@ -514,7 +448,8 @@ left: -8%;
 .skills h1 {
     margin-bottom: 60px;
 }
-.skills h3 { font-weight: bold; margin-top: 0px;}
+.skills h3 { font-weight: bold; margin-top: 0px;margin-bottom: 20px;
+}
 .skills .progress { height:30px;}
 .skills .progress-bar { 
     line-height:30px;
@@ -582,6 +517,9 @@ left: -8%;
     border: 1px solid #ADB30C;
     color: white;
     text-transform: uppercase;
+}
+.contact-us .fields .contact-info {
+    overflow: hidden;   
 }
 .contact-us .fields .help {
     background: rgba(22, 2, 2, 0.7);
@@ -679,3 +617,5 @@ left: -8%;
     font-size: 15px;
 }
 /* End Section  Footer */
+
+
