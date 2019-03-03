@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <!-- to excute bootstrap when use IE -->
@@ -9,18 +9,23 @@
 
         <title>bootstrap 3</title>
         <link rel="stylesheet" href="../css/bootstrap.css">
+        <!--<link rel="stylesheet" href="../css/bootstrap-rtl.css">-->
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/media.css">
         <link rel="stylesheet" href="../css/default-theme.css">
+        <link rel="stylesheet" href="../css/hover.css">
+        <link rel="stylesheet" href="../css/animate.css">
+
+        <!-- to support media Queris -->
+
         <!--[if lt IE 9]>
 <script src="js/html5shiv.min.js"></script>
-<!-- to support media Queris -->
-        <script src="../js/respond.min.js"></script>
-        <![endif]-->
+<script src="../js/respond.min.js"></script>
+<![endif]-->
     </head>
     <body>
-        <!---------------- Too Box -------------------> 
+        <!-- ======================== Option Box  ========================--> 
 
         <section class="option-box">
             <div class="color-option">
@@ -34,7 +39,7 @@
             </div>
             <li class="fa fa-gear fa-3x gear-check"></li>
         </section>
-        <!---------------- Navbar -------------------> 
+        <!-- ======================== Navigation  ========================--> 
 
         <nav class="navbar  navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -43,14 +48,14 @@
                         <span class="sr-only">Toggle navigation</span>
                         <span class="glyphicon glyphicon-tasks" style="color: white;"></span>
                     </button>
-                    <a class="navbar-brand" href="#">quick
+                    <a class="navbar-brand hvr-wobble-horizontal" href="#">quick
                         <span>Inc&#46;</span>
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="mynavbar-data">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">About</a></li>
+                        <li class="active"><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="#">company</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
@@ -68,7 +73,7 @@
             </div>
         </nav>
 
-        <!---------------- Slidebar -------------------> 
+        <!-- ======================== Slidebar  ======================== --> 
 
         <div id="myslidee" class="carousel slide hidden-xs" data-ride="carousel" >
             <!-- Indicators  وهي النقاط التنحط في الاسفل -->
@@ -80,9 +85,9 @@
             <div class="carousel-inner" role="listbox">
                 <!-- 5 images -->
                 <div class="item active">
-                    <img src="../images/s1.jpg" alt="p1" style="height:700px; margin: 0 auto; width: 100%;">
+                    <img src="../images/s1.jpg" alt="p1">
                     <div class="carousel-caption hidden-xs">
-                        <h1> web Design</h1>
+                        <h2 class="h1"> web Design</h2>
                         <p class="lead">Accessibility issue
                             The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
                         <div class="btn btn-primary">Read Now</div>
@@ -92,7 +97,7 @@
                 <div class="item">
                     <img src="../images/s2.png" alt="p2">
                     <div class="carousel-caption hidden-xs">
-                        <h1>online courses</h1>
+                        <h2 class="h1">online courses</h2>
                         <p class="lead">Accessibility issue
                             The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
                     </div>
@@ -109,9 +114,9 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <!---------------- About -------------------> 
+        <!--======================== About  ========================--> 
 
-        <section class="about text-center">
+        <section class="about text-center wow bounceIn" data-wow-duration="2s" data-wow-offset="200">
             <div class="container">
                 <h1 class="hidden-xs">Meet our new template <span>quick inc&#46;</span></h1>
                 <h3 class="visible-xs">Meet our new template <span>quick inc&#46;</span></h3>
@@ -119,33 +124,33 @@
             </div>
         </section>
 
-        <!---------------- Features -------------------> 
+        <!-- ======================== Features  ======================== --> 
         <section class="features text-center">
             <div class="container">
                 <h1>my features</h1>
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
-                        <div class="feat">
+                        <div class="feat wow bounceInLeft" data-wow-duration="1s" data-wow-offset="400">
                             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                             <h3>100% responsive</h3>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="feat">
+                        <div class="feat wow bounceInUp" data-wow-duration="1s" data-wow-offset="400">
                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
                             <h3>retina ready</h3>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
                         </div>
                     </div><div class="col-lg-3 col-md-6">
-                    <div class="feat">
+                    <div class="feat wow bounceInDown" data-wow-duration="1s" data-wow-offset="400">
                         <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                         <h3>awesome display</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
                     </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="feat">
+                        <div class="feat wow bounceInRight" data-wow-duration="1s" data-wow-offset="400">
                             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                             <h3>well documented</h3>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
@@ -156,8 +161,8 @@
             </div>
         </section>
 
-        <!---------------- Testimonials  -------------------> 
-        <section class="testimonials  text-center">
+        <!-- ======================== Testimonials  ======================== --> 
+        <section class="testimonials  text-center wow jackInTheBox" data-wow-duration="1s" data-wow-offset="600">
             <div class="container">
                 <h1>what our clients say?</h1>
                 <div id="mytestimonials" class="carousel slide" data-ride="carousel">
@@ -200,13 +205,13 @@
                 </div>
             </div>
         </section>
-        <!---------------- Price Table  -------------------> 
+        <!-- ======================== Price Table  ======================== --> 
         <section class="price-table text-center">
             <div class="container">
                 <h1> our amazing prices</h1>
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 col-xs-12">
-                        <div class="price-box" id="personal">
+                        <div class="price-box wow rotateInDownLeft" data-wow-duration="1s" data-wow-offset="480" id="personal">
                             <h1>Personal</h1>
                             <h1 class="price">$12</h1>
                             <p>/Mo billed annually </p>
@@ -217,7 +222,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 col-xs-12">
-                        <div class="price-box" id="startup">
+                        <div class="price-box wow rotateInDownRight" data-wow-duration="1s" data-wow-offset="480"  id="startup">
                             <h1>startup</h1>
                             <h1 class="price">$19</h1>
                             <p>/Mo billed annually </p>
@@ -228,7 +233,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 col-xs-12" >
-                        <div class="price-box" id="business">
+                        <div class="price-box wow rotateInDownLeft" data-wow-duration="1s" data-wow-offset="480"  id="business">
                             <h1>business</h1>
                             <h1 class="price">$39</h1>
                             <p>/Mo billed annually </p>
@@ -239,7 +244,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 col-xs-12" >
-                        <div class="price-box" id="free">
+                        <div class="price-box wow rotateInDownRight" data-wow-duration="1s" data-wow-offset="480"  id="free">
                             <h1>free</h1>
                             <h1 class="price ">$0</h1>
                             <button type="button" class="btn btn-default free" ><a href="" class="upgrade">try now</a>
@@ -251,7 +256,7 @@
                 </div>
             </div>
         </section>
-        <!---------------- About again -------------------> 
+        <!-- ======================== About again  ======================== --> 
 
         <section class="about text-center">
             <div class="container">
@@ -261,7 +266,7 @@
             </div>
         </section>
 
-        <!---------------- Our Team  -------------------> 
+        <!-- ======================== Our Team  ======================== --> 
         <section class="our-team text-center">
             <div class="team">
                 <div class="container">
@@ -269,44 +274,44 @@
                     <div class="row">
 
                         <div class="col-lg-3 col-sm-6">
-                            <div class="person">
+                            <div class="person wow pulse" data-wow-duration="1s" data-wow-offset="530">
                                 <img class="img-circle" src="../images/p1.jpg" alt="chirs coyier">
                                 <h3>chirs coyier</h3>
                                 <p> man this is chirs coyier the founder of the amazing websites css tricks woooo</p>
-                                <a href="" id="google1" ><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-google-plus-square fa-lg"></i></a>
                                 <a href=""><i class="fa fa-facebook-square fa-lg"></i></a>
                                 <a href="" ><i class="fa fa-twitter-square fa-lg"></i></a>
                                 <a href="" ><i class="fa fa-youtube-square fa-lg"></i></a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                            <div class="person">
+                            <div class="person wow pulse" data-wow-duration="1s" data-wow-offset="530">
                                 <img class="img-circle" src="../images/p2.jpg" alt="steve jobs">
                                 <h3>steve jobs</h3>
                                 <p>this is amazing hacker man man with a much knowledge in hacking systems</p>
-                                <a href="" id="google1" ><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                <a href="" ><i class="fa fa-google-plus-square fa-lg"></i></a>
                                 <a href=""><i class="fa fa-facebook-square fa-lg"></i></a>
                                 <a href="" ><i class="fa fa-twitter-square fa-lg"></i></a>
                                 <a href="" ><i class="fa fa-youtube-square fa-lg"></i></a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                            <div class="person">
+                            <div class="person wow pulse" data-wow-duration="1s" data-wow-offset="530">
                                 <img  class="img-circle" src="../images/p3.jpg" alt="leah culver">
                                 <h3>leah culver</h3>
                                 <p>this is amazing hacker man man with a much knowledge in hacking systems</p>
-                                <a href="" id="google1" ><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                <a href=""><i class="fa fa-google-plus-square fa-lg"></i></a>
                                 <a href=""><i class="fa fa-facebook-square fa-lg"></i></a>
                                 <a href="" ><i class="fa fa-twitter-square fa-lg"></i></a>
                                 <a href="" ><i class="fa fa-youtube-square fa-lg"></i></a>
                             </div>
                         </div> 
                         <div class="col-lg-3 col-sm-6">
-                            <div class="person">
+                            <div class="person wow pulse" data-wow-duration="1s" data-wow-offset="530">
                                 <img class="img-circle" src="../images/p4.jpg" alt="marissa mayer">
                                 <h3>marissa mayer</h3>
                                 <p>this is amazing hacker woman with a much knowledge in hacking systems</p>
-                                <a href="" id="google1" ><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                <a href=""><i class="fa fa-google-plus-square fa-lg"></i></a>
                                 <a href=""><i class="fa fa-facebook-square fa-lg"></i></a>
                                 <a href="" ><i class="fa fa-twitter-square fa-lg"></i></a>
                                 <a href="" ><i class="fa fa-youtube-square fa-lg"></i></a>
@@ -316,7 +321,7 @@
                 </div>
             </div>
         </section>
-        <!---------------- Subscribe  -------------------> 
+        <!-- ======================== Subscribe  ======================== --> 
 
         <section class="subscribe text-center">
             <div class="container">
@@ -324,7 +329,7 @@
 
 
                     <div class="col-md-5 hidden-xs">
-                        <img class="img-responsive center-block"  src="../images/m3.png" width="256">
+                        <img class="img-responsive center-block"  src="../images/m3.png" alt="post" width="256">
                     </div>
 
                     <div class="col-md-7">
@@ -339,7 +344,7 @@
                 </div>
             </div>
         </section>
-        <!---------------- Skills  -------------------> 
+        <!-- ======================== Skills  ======================== --> 
 
         <section class="skills">
             <div class="container">
@@ -392,7 +397,7 @@
             </div>
         </section>
 
-        <!---------------- Contact Us  -------------------> 
+        <!-- ======================== Contact Us  ======================== --> 
         <section class="contact-us text-center">
             <div class="fields">
                 <div class="container">
@@ -400,8 +405,8 @@
                     <p >if you have quer/guestions/concerns regardinf your health and sexuality don't hesitate to get in touch.</p>
                     <!-- Start contact form -->
                     <div class="row">
-                        <div class="col-md-5 col-md-offset-1">
-                            <form role="form">
+                        <div class="col-md-5 col-md-offset-1 wow fadeInUp" data-wow-duration="2s" data-wow-offset="400">
+                            <form>
                                 <div class="form-group text-left">
                                     <label for="name">Name:</label>
                                     <input type="text" class="form-control" placeholder="Enter Your Name" id="name">
@@ -427,28 +432,28 @@
 
                         <!-- Start contact info  -->
                         <div class=" contact-info col-md-5">
-                            <div class="help">
+                            <div class="help wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="400">
                                 <p> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
                                     </span>
                                     NA 345 park ave</p>
                             </div> 
-                            <div class="help">
+                            <div class="help wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.5s" data-wow-offset="100">
                                 <p> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                     </span>
                                     @quick</p>
                             </div> 
-                            <div class="help">
+                            <div class="help wow fadeInRight" data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="100">
                                 <p> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
                                     </span>
                                     +966 553 785 244</p>
                             </div> 
-                            <div class="help">
+                            <div class="help wow fadeInRight" data-wow-duration="2s" data-wow-delay="2.5s" data-wow-offset="100">
                                 <p> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
@@ -463,27 +468,27 @@
                 </div>
             </div>
         </section>
-        <!---------------- Our Clients  -------------------> 
-        <section class="our-clients">
+        <!-- ======================== Our Clients  ======================== --> 
+        <div class="our-clients">
             <div class="container">
                 <div class="list-unstyled">
-                    <li class="col-md-2 col-xs-4">
+                    <li class="col-md-2 col-xs-4 wow pulse" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="430">
                         <img class="img-responsive center-block" src="../images/drees%20homes.png" alt="drees homes">
                     </li>
-                    <li class="col-md-2 col-xs-4">
+                    <li class="col-md-2 col-xs-4 wow pulse" data-wow-duration="2s" data-wow-delay="1.5s" data-wow-offset="430">
                         <img class="img-responsive center-block" src="../images/selex%20ES.png" alt="selex ES"></li>
-                    <li class="col-md-2 col-xs-4">
+                    <li class="col-md-2 col-xs-4 wow pulse" data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="430">
                         <img class="img-responsive center-block" src="../images/bakery.png" alt="bakery"></li>
-                    <li class="col-md-2 col-xs-4">
+                    <li class="col-md-2 col-xs-4 wow pulse" data-wow-duration="2s" data-wow-delay="2.5s" data-wow-offset="430">
                         <img class="img-responsive center-block" src="../images/adamigo.png" alt="ADamigo"></li>
-                    <li class="col-md-2 col-xs-4">
+                    <li class="col-md-2 col-xs-4 wow pulse" data-wow-duration="2s" data-wow-delay="3s" data-wow-offset="430">
                         <img class="img-responsive center-block" src="../images/athletics.png" alt="athletics"></li>
-                    <li class="col-md-2 col-xs-4">
+                    <li class="col-md-2 col-xs-4 wow pulse" data-wow-duration="2s" data-wow-delay="3.5s" data-wow-offset="430">
                         <img class="img-responsive center-block" src="../images/tamansari.png" alt="tamansari"></li>
                 </div>
             </div>
-        </section>
-        <!---------------- Footer  -------------------> 
+        </div>
+        <!-- ======================== Footer ======================== --> 
         <section class="footer">
             <div class="container">
                 <div class="row">
@@ -502,13 +507,13 @@
                             <li><a href="">Contact Us</a></li>
                         </ul>
                         <ul class="list-unstyled social-links">
-                            <li><a href=""><img src="../images/social-media/flickr-128.png"></a></li>
-                            <li><a href=""><img src="../images/social-media/iconfinder_Facebook_1288098.png"></a></li>
-                            <li><a href=""><img src="../images/social-media/iconfinder_Instagram_1288103.png"></a></li>
-                            <li><a href=""><img src="../images/social-media/iconfinder_Twitter_1288111.png"></a></li>
-                            <li><a href=""><img src="../images/social-media/iconfinder_Youtube_1288115.png"></a></li>
-                            <li><a href=""><img src="../images/social-media/Vine-128.png"></a></li>
-                            <li><a href=""><img src="../images/social-media/w-128.png"></a></li>
+                            <li><a href=""><img src="../images/social-media/flickr-128.png" alt="flickr"></a></li>
+                            <li><a href=""><img src="../images/social-media/iconfinder_Facebook_1288098.png" alt="facebook"></a></li>
+                            <li><a href=""><img src="../images/social-media/iconfinder_Instagram_1288103.png" alt="Instagram"></a></li>
+                            <li><a href=""><img src="../images/social-media/iconfinder_Twitter_1288111.png" alt="Twitter"></a></li>
+                            <li><a href=""><img src="../images/social-media/iconfinder_Youtube_1288115.png" alt="Youtube"></a></li>
+                            <li><a href=""><img src="../images/social-media/Vine-128.png" alt="Vine"></a></li>
+                            <li><a href=""><img src="../images/social-media/w-128.png" alt="w"></a></li>
 
                         </ul>
                     </div>
@@ -553,10 +558,10 @@
                     <!--  Start Links  -->
                     <div class="col-lg-4">
                         <h3>our awesome work</h3>
-                        <img class="img-thumbnail" src="../images/b1.jpg">
-                        <img class="img-thumbnail" src="../images/b2.jpg">
-                        <img class="img-thumbnail" src="../images/b3.png">
-                        <img class="img-thumbnail" src="../images/b4.jpg">
+                        <img class="img-thumbnail" src="../images/b1.jpg" alt="img1">
+                        <img class="img-thumbnail" src="../images/b2.jpg" alt="img2">
+                        <img class="img-thumbnail" src="../images/b3.png" alt="img3">
+                        <img class="img-thumbnail" src="../images/b4.jpg" alt="img4">
                     </div>
                 </div>
             </div>
@@ -566,23 +571,29 @@
             </div>
         </section>
 
-        <!---------------- Loading  -------------------> 
-        <section class="loading-overlay">
-            <div class="spinner">
-                <div class="cube1"></div>
-                <div class="cube2"></div>
-            </div>
-        </section>
+        <!--  ======================== Loading ======================== -->
+<div class="loading-overlay">
+<div class="spinner">
+<div class="cube1"></div>
+<div class="cube2"></div>
+</div>
+</div>
 
-        <!---------------- Scroll To Top  -------------------> 
+<!-- ======================== Scroll To Top ======================== --> 
         <div id="scroll-top">
-        <li class="fa fa-chevron-up fa-3x"></li>
+            <li class="fa fa-chevron-up fa-3x"></li>
         </div>
 
         <!-- to work bootstrap must use jQuery + put before bootstrap file -->    
         <script src="../js/jQueryv-3.3.1.js"></script> 
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/plugin.js"></script>
+        <script src="../js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+        <script src="../js/jquery.nicescroll.min.js"></script>
+
+
+
 
 
     </body>
