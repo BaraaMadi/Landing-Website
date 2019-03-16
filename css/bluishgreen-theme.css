@@ -1,0 +1,27 @@
+/* Start bluishgreen Theme 
+---------------------------------------------------------------------------------------------------------------*/
+
+.navbar-inverse .navbar-brand span,
+.footer .media h4.media-heading,
+h1{
+    color: #66c2a5;
+}
+/* Start navbar */
+.dropdown-menu {
+    border-top: 2px solid #66c2a5;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.carousel-indicators .active, 
+.option-box .gear-check
+{
+    background-color: #66c2a5;
+}
+/* Start Option Box */
+.option-box .color-option {
+    border: 2px solid #66c2a5;
+}
+

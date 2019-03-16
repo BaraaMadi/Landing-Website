@@ -13,38 +13,59 @@
     font-family:head1;
     src: url(../font/Elsie-Regular.otf);
 }
-body {
-    height: auto;
-    text-transform: capitalize;
-}
-p {color: #888;  font-family:pargrph;}
-h1 { color: #296F42;font-family:head1;font-weight: bold;}
+body { text-transform: capitalize; overflow: hidden}
+p {color: #888;font-family:pargrph;}
+h1,.h1 {font-family:head1;font-weight: bold;}
 h3{color: #B1A03E;font-family:head3;}
-/* Grid System */
+/* Grid System 
+--------------------------------------------------------------------------------------------------------------- */
 
-/***************** Start Overriding Bootstrap ************/
-/* navbar */
+.row {margin-top: 50px;}
 
-.navbar-inverse{
-    background-color: #6F2833;
-    font-family:navbar;
-
+.grid-box { margin-bottom: 10px; padding: 10px; font-family: fantasy;}
+.color-r1 {
+    background-color: #fbc6bd;
+    color: #e32561;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
 }
-.navbar-nav > li > a {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 16px;
+.color-r2{
+    background-color: #83c2a8;
+    color: #27b990 ;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+}
+.color-r2:hover, .color-r1:hover{ animation: color1 1s alternate infinite;}
+
+
+@keyframes color1 {
+    from {  transform: scale(1);}
+    to { transform:scale(1.1);}
 }
 
-.dropdown-menu {
-    background:#B23F51;
-    border-top: 2px solid #296F42;
-    min-width: 200px;
+.warning { color: red; font-size: 16px; font-weight: bold;}
+.product{
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-bottom: 10px;
+    min-height: 100px;
 }
-.navbar-right .dropdown-menu {
-    left: 0;
-    right: auto;
-} 
+.test { height: 2000px; background: #F6F6F6; line-height: 300px;}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------Start Overriding Bootstrap---------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Navigation 
+--------------------------------------------------------------------------------------------------------------- */
+.navbar-inverse{ background-color: #6F2833; font-family:navbar;}
+.navbar-nav > li > a { padding-top: 20px; padding-bottom: 20px; font-size: 16px;}
+
+.dropdown-menu {background:#B23F51;min-width: 200px;}
+.navbar-right .dropdown-menu {left: 0;right: auto;} 
 .dropdown-menu > li > a{
     padding: 6px 20px;
     -webkit-transition:padding 0.5s ease; /* عشان يكون سلس */
@@ -52,137 +73,63 @@ h3{color: #B1A03E;font-family:head3;}
     -o-transition:padding 0.5s ease; /* عشان يكون سلس */
     transition:padding 0.5s ease; /* عشان يكون سلس */
 }
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus{
-    padding-left: 25px;
-}
-.navbar-inverse .navbar-brand{
-    font-size: 30px;
-    line-height: 30px;
-}
-.navbar-inverse .navbar-brand span{
-    color: #296F42;
-}
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{padding-left: 25px;}
+.navbar-inverse .navbar-brand{ font-size: 30px;line-height: 30px;}
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus{
     color: #fff;
-    background-color: #296F42;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover, 
 .navbar-inverse .navbar-nav > .open > a:focus {
     background: #B23F51;
 }
-.navbar-toggle {
-    margin-top: 12px;
-}
+.navbar-toggle {margin-top: 12px;}
 
-/* Start Slidebar */
-.carousel-caption {
-    bottom: 120px; 
-    background:rgba(225, 225, 225, 0.3);
-    padding-left: 20px;
-    padding-right: 20px;
-
+/*  Slidebar 
+--------------------------------------------------------------------------------------------------------------- */
+.carousel-caption {bottom: 120px; background:rgba(0, 0, 0, 0.3); padding-left: 20px; padding-right: 20px;}
+.carousel-caption h1, .carousel-caption .lead { color: white; }
+.carousel-indicators li { height: 13px; width: 13px; border: 1px solid #B23F51;}
+.carousel-indicators .active { height: 16px; width: 16px;}
+.carousel-inner > .item > img {height:700px; margin: 0 auto; width: 100%;}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+    margin-top: 79px;
 }
-.carousel-caption h1, .carousel-caption .lead {
-    color: white;
-}
-.carousel-indicators li {
-    height: 13px;
-    width: 13px;
-    border: 1px solid #B23F51;
-}
-.carousel-indicators .active {
-    height: 16px;
-    width: 16px;
-    background: #296F42;
-}
-.carousel-inner > .item > img {
-    height:700px; margin: 0 auto; width: 100%;
-}
-/* End Slidebar */
 
 /***************** End Overriding Bootstrap ************/
 
-/* Start Option Box */
 
-.option-box {
-    position: fixed;
-    top: 100px;
-    left: 0px;
-    z-index: 999;
-}
-.option-box .color-option {
-    float: left;
-    background: #6F2833;
-    color: #9d9d9d;
-    padding: 10px;
-    width: 200px;
-    border: 2px solid #296F42;
-    display: none;
-}
-.option-box .color-option h4 { 
-    font-size: 16px;
-    font-family: navbar;
-    padding-bottom: 5px;
-}
-.option-box .color-option ul li {
-    width: 20px;
-    height: 20px;
-    background: #296F42;
-    display: inline-block;
-    margin-right: 3px;
-}
-.option-box .gear-check {
-    padding: 5px;
-    background: #296F42;
-    color: white;
-    cursor: pointer;
-}
-/* End Option Box */
+/*  Option Box
+--------------------------------------------------------------------------------------------------------------- */
 
-/* Start Section About */
+.option-box { position: fixed;top: 100px;left: 0px;z-index: 999;}
+.option-box .color-option {float: left;background: #6F2833;color: #9d9d9d;padding: 10px;width: 200px;display: none;}
+.option-box .color-option h4 { font-size: 16px;font-family: navbar;padding-bottom: 5px;}
+.option-box .color-option ul li {width: 20px;height: 20px;display: inline-block;margin-right: 3px;cursor: pointer;}
+.option-box .gear-check {padding: 5px;color: white;cursor: pointer;}
 
-.about {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.about h1 {
-}
-.about h1 span {
-    color: #B1A03E ;
+/*  About
+--------------------------------------------------------------------------------------------------------------- */
 
-}
-.about .lead {
-    color: #888;
-    margin-top: 15px;
-}
-/* End Section About */
+.about {padding-top: 60px;padding-bottom: 60px;}
+.about h1 span {color: #B1A03E ;}
+.about .lead {color: #888;margin-top: 15px;}
 
-/* Start Section features */
+/*  Features
+--------------------------------------------------------------------------------------------------------------- */
 
-.features {
-    background: #EFC2E6;
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-.features h1 {
-    margin-bottom: 70px;
-}
-.features .feat {
-    margin-bottom: 35px;
-}
-.features .feat h3{
-    font-weight: bold;
-}
-.features .feat p {
-    line-height: 2em;
-    font-size: 13px;
-}
+.features {background: #EFC2E6;padding-bottom: 50px;padding-top: 50px;}
+.features h1 {margin-bottom: 70px;}
+.features .feat {margin-bottom: 35px;}
+.features .feat h3{font-weight: bold;}
+.features .feat p {line-height: 2em;font-size: 13px;}
 .features .feat span.glyphicon {
     font-size: 27px;
     margin-bottom: 10px;
@@ -192,42 +139,21 @@ h3{color: #B1A03E;font-family:head3;}
     padding: 10px;
     transition: all .5s ease;
 }
-.features .feat:hover span.glyphicon {
-    box-shadow: 2px 2px 10px #B1A03E, -2px -2px 10px #B1A03E;
-    transform: scale(1.1);
-}
-.features .feat span.glyphicon.glyphicon-ok{
-    color:#B03E4E;
-}.features .feat span.glyphicon.glyphicon-thumbs-up{
-    color:#88B03E;
-}.features .feat span.glyphicon.glyphicon-eye-open{
-    color:#3EB0A0;
-}.features .feat span.glyphicon.glyphicon-pencil{
-    color:#B0663E;
-}
-/* End Section features */
+.features .feat:hover span.glyphicon {box-shadow: 2px 2px 10px #B1A03E, -2px -2px 10px #B1A03E;transform: scale(1.1);}
+.features .feat span.glyphicon.glyphicon-ok{color:#B03E4E;}
+.features .feat span.glyphicon.glyphicon-thumbs-up{color:#88B03E;}
+.features .feat span.glyphicon.glyphicon-eye-open{color:#3EB0A0;}
+.features .feat span.glyphicon.glyphicon-pencil{color:#B0663E;}
 
-/* Start Section testimonials */
-.testimonials {
-    padding-bottom: 70px;
-    padding-top: 70px;
-}
+/* Testimonials 
+--------------------------------------------------------------------------------------------------------------- */
+
+.testimonials {padding-bottom: 70px;padding-top: 70px;}
 .testimonials h1 { margin-bottom: 20px;}
 .testimonials .lead { line-height:32px; margin-bottom: 10px;} /* 32px = 2em */ 
-.testimonials span { 
-    font-size: 18px;
-    font-weight: bold;
-    color: #B23F51;
-
-}
-.testimonials .carousel-inner {
-    min-height: 140px;
-}
-.testimonials .carousel-indicators {
-    position: static;
-    width: 100%;
-    margin-left: auto;
-}
+.testimonials span {font-size: 18px;font-weight: bold;color: #B23F51;}
+.testimonials .carousel-inner {min-height: 140px;}
+.testimonials .carousel-indicators {position: static;width: 100%;margin-left: auto;}
 .testimonials .carousel-indicators li {
     text-indent: 0;
     width: 80px;
@@ -243,31 +169,14 @@ h3{color: #B1A03E;font-family:head3;}
     -o-transition:all 0.5s ease; /* عشان يكون سلس */
     transition:all 0.5s ease; /* عشان يكون سلس */
 }
-.testimonials .carousel-indicators li.active {
-    width: 80px;
-    height: 80px;
-    opacity: 1;
-    border:3px solid #B23F51;
-    background:#eee;
+.testimonials .carousel-indicators li.active {width: 80px;height: 80px;opacity: 1;border:3px solid #B23F51;background:#eee;}
+.testimonials .carousel-indicators li img {max-width: 100%;max-height: 100%;}
 
-}
-.testimonials .carousel-indicators li img {
-    max-width: 100%;
-    max-height: 100%;
-}
-/* End Section testimonials */
+/* Price Table 
+--------------------------------------------------------------------------------------------------------------- */
 
-/* Start Section Price Table */
-.price-table {
-    background: #95E192;
-    padding-bottom: 70px;
-    padding-top: 70px;
-    z-index: 2;
-    position: relative;
-}
-.price-table h1 {
-    margin-bottom: 40px;
-}
+.price-table {background: #95E192;padding-bottom: 70px;padding-top: 70px;z-index: 2;position: relative;}
+.price-table h1 {margin-bottom: 40px;}
 .price-table .price-box {
     background: #fff;
     padding: 20px 20px 0;
@@ -275,15 +184,8 @@ h3{color: #B1A03E;font-family:head3;}
     border-radius: 10px;
     margin-bottom: 15px;
 }
-.price-table .price-box:hover h1.price {
-    transform: scale(1.1) rotate(360deg);
-    border:2px solid #2f143d;
-    line-height: 90px;
-}
-.price-table .price-box h1 {
-    margin: 5px 0 15px;
-    color: #2f143d;
-}
+.price-table .price-box:hover h1.price {transform: scale(1.1) rotate(360deg);border:2px solid #2f143d;line-height: 90px;}
+.price-table .price-box h1 {margin: 5px 0 15px;color: #2f143d;}
 .price-table .price-box h1.price {
     font-size: 50px;
     font-weight: bold;
@@ -299,14 +201,8 @@ h3{color: #B1A03E;font-family:head3;}
     -o-transition-duration: 0.7s;
     transition-duration: 0.7s;
 }
-.price-table .price-box p{
-    line-height:1.7;
-    color: white ;
-}
-.price-table .price-box p span{
-    font-size: 20px;
-    font-weight: 500;
-}
+.price-table .price-box p{line-height:1.7;color: white;}
+.price-table .price-box p span{font-size: 20px;font-weight: 500;}
 .price-table .price-box button {
     margin: 13px 0;
     padding: 8px 30px;
@@ -315,7 +211,6 @@ h3{color: #B1A03E;font-family:head3;}
     font-size: 14px;
     background-color: #34134C;
     color: #fff;
-
 }
 .price-table .price-box button a.upgrade {
     color: white;
@@ -326,21 +221,15 @@ h3{color: #B1A03E;font-family:head3;}
     top: 0px;
     transition: all .2s ease;
 }
-.price-table .price-box button:hover a.upgrade {
-    top: -2px;
-}
-.price-table .price-box button.free{
-    margin-top:84px;
-}
-#personal { background-color: #6D569C;}
-#startup { background-color: #8B77DA; }
-#business { background-color: #FFA358; }
-#free { background-color: rgb(242, 220, 206); }
+.price-table .price-box button:hover a.upgrade {top: -2px;}
+.price-table .price-box button.free{margin-top:84px;}
+#personal {background-color: #6D569C;}
+#startup {background-color: #8B77DA;}
+#business {background-color: #FFA358;}
+#free {background-color: rgb(242, 220, 206);}
 
-/* End Section Price Table */
-
-
-/* Start Section Our Team */
+/* Our Team 
+--------------------------------------------------------------------------------------------------------------- */
 
 .our-team {
     background: url(../images/Website-Blurry-Park-small.jpg) no-repeat center center fixed;
@@ -349,71 +238,32 @@ h3{color: #B1A03E;font-family:head3;}
     -o-background-size: cover;
     background-size: cover;
     min-height: 600px;
-
 }
-.our-team h1 {
-    margin-bottom: 60px;
-    font-weight: bold;
-    color: #0E6FDC;
-
-}
-.our-team .team {
-
-    background: rgba(22, 2, 2, 0.5);
-    /*background: rgba(225, 2, 2, 0.3);*/
-    min-height: 600px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-.our-team .team .person {
-    margin-bottom: 40px;
-}
-.our-team .team .person h3{
-    font-weight: bold;
-    color:  #ADB30C;
-}
-.our-team .team .person p{
-    color: white;
-    font-weight: bold;
-}
+.our-team h1 {margin-bottom: 60px;font-weight: bold;color: #0E6FDC;}
+.our-team .team {background: rgba(22, 2, 2, 0.5);min-height: 600px;padding-bottom: 40px;padding-top: 40px;}
+.our-team .team .person {margin-bottom: 40px;}
+.our-team .team .person h3{font-weight: bold;color:  #ADB30C;}
+.our-team .team .person p{color: white;font-weight: bold;}
 .our-team .team .person i{
     color: white;
     margin-right: 5px;
     font-size: 20px;
     margin-top: 8px;
     transition: all .5s ease;
-
 }
-
 .our-team .team .person a i.fa-google-plus-square:hover{ color:#DA140E; background: white; }
 .our-team .team .person a i.fa-facebook-square:hover{ color:#0E6FDC;background: white; }
 .our-team .team .person a i.fa-twitter-square:hover{ color:#58A2F4;background: white; }
 .our-team .team .person a i.fa-youtube-square:hover{ color:#B3110C;background: white; }
 
-/* End Section Our Team */
 
-/* Start Section Subscribe */
+/* Subscribe 
+--------------------------------------------------------------------------------------------------------------- */
 
-.subscribe {
-    padding-top: 40px;
-    padding-bottom: 70px;
-    background: #eee;
-}
-.subscribe h1 {
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-.subscribe .row i.fa-cog {
-    position: absolute;
-    right: 20px;
-    top: 22px;
-    color:#F9D62E;
-}
-.subscribe p {
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-}
-
+.subscribe {padding-top: 40px;padding-bottom: 70px;background: #eee;}
+.subscribe h1 {letter-spacing: 2px;margin-bottom: 20px;}
+.subscribe .row i.fa-cog {position: absolute;right: 20px;top: 22px;color:#F9D62E;}
+.subscribe p {margin-bottom: 30px;letter-spacing: 2px;}
 .subscribe .form-control{
     border-radius: 0;
     margin-right: -4.2px;
@@ -423,33 +273,16 @@ h3{color: #B1A03E;font-family:head3;}
     font-family: pargrph;
     font-size: 15px;
 }
-.subscribe button{
-    border-radius: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+.subscribe button{border-radius: 0;border-top-right-radius: 20px;border-bottom-right-radius: 20px;}
+.subscribe form button.btn-danger{background: #F9D62E;border-color: #F9D62E;transition: all .5s ease;}
+.subscribe form button.btn-danger:hover{background: #cceae7;border-color: #cceae7;}
 
-}
-.subscribe form button.btn-danger{
-    background: #F9D62E;
-    border-color: #F9D62E;
-    transition: all .5s ease;
-}
-.subscribe form button.btn-danger:hover{
-    background: #cceae7;
-    border-color: #cceae7;
-}
-/* End Section Subscribe */
+/* Skills 
+--------------------------------------------------------------------------------------------------------------- */
 
-/* Start Section Skills */
-.skills {
-    padding-bottom: 70px;
-    padding-top: 40px;
-}
-.skills h1 {
-    margin-bottom: 60px;
-}
-.skills h3 { font-weight: bold; margin-top: 0px;margin-bottom: 20px;
-}
+.skills {padding-bottom: 70px;padding-top: 40px;}
+.skills h1 {margin-bottom: 60px;}
+.skills h3 { font-weight: bold; margin-top: 0px;margin-bottom: 20px;}
 .skills .progress { height:30px;}
 .skills .progress-bar { 
     line-height:30px;
@@ -459,9 +292,9 @@ h3{color: #B1A03E;font-family:head3;}
     text-indent: 10px;
 }
 .skills .progress-bar-c1 {background-color: #6D569C;}
-.skills .progress-bar-c2 {background-color: #8B77DA; }
-.skills .progress-bar-c3 {background-color: #FFA358; }
-.skills .progress-bar-c4 {background-color: rgb(242, 220, 206); }
+.skills .progress-bar-c2 {background-color: #8B77DA;}
+.skills .progress-bar-c3 {background-color: #FFA358;}
+.skills .progress-bar-c4 {background-color: rgb(242, 220, 206);}
 .skills .skills-info .btn-color {
     position: relative;
     top: 0px;
@@ -472,9 +305,10 @@ h3{color: #B1A03E;font-family:head3;}
     transition: all .5s ease;
 }
 .skills .skills-info .btn-color:hover {top: 2px;}
-/* End Section Skills */
 
-/* Start Section Contact Us */
+/* Contact Us 
+--------------------------------------------------------------------------------------------------------------- */
+
 .contact-us {
     background: url(../images/contact.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -483,44 +317,24 @@ h3{color: #B1A03E;font-family:head3;}
     background-size: cover;
     min-height: 300px;
 }
-.contact-us .fields {
-    background: rgba(22, 2, 2, 0.5);
-    min-height: 300px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-
-}
-.contact-us .fields h1 {
-    color: #0E6FDC;
-    font-weight: bold;
-}
-.contact-us .fields p {
-    color: white;
-    font-size: 18px;
-    text-transform: lowercase;
-}
+.contact-us .fields {background: rgba(22, 2, 2, 0.5);min-height: 300px;padding-bottom: 40px;padding-top: 40px;}
+.contact-us .fields h1 {color: #0E6FDC;font-weight: bold;}
+.contact-us .fields p {color: white;font-size: 18px;text-transform: lowercase;}
 .contact-us .fields form {
     background: rgba(22, 2, 2, 0.7);
     padding:30px 25px;
     width: 80%;
     margin-bottom: 20px;
     margin-left: 20px;
-
 }
-.contact-us .fields form label {
-    color: white;
-    font-family: pargrph;
-    font-size: 18px;
-}
+.contact-us .fields form label {color: white;font-family: pargrph;font-size: 18px;}
 .contact-us .fields form input[type="submit"] {
     background:  #ADB30C;
     border: 1px solid #ADB30C;
     color: white;
     text-transform: uppercase;
 }
-.contact-us .fields .contact-info {
-    overflow: hidden;   
-}
+.contact-us .fields .contact-info {overflow: hidden;}
 .contact-us .fields .help {
     background: rgba(22, 2, 2, 0.7);
     height: 100.7px;
@@ -529,78 +343,115 @@ h3{color: #B1A03E;font-family:head3;}
     width: 80%;
     margin-bottom: 10px;
     margin-left: 20px;
+}
+.contact-us .fields .help .fa-stack {color: #ADB30C;}
+.contact-us .fields .help p {line-height: 80px;font-size: 20px;text-transform: capitalize;}
 
-}
-.contact-us .fields .help .fa-stack {
-    color: #ADB30C;
-}
-.contact-us .fields .help p {
-    line-height: 80px;
-    font-size: 20px;
-    text-transform: capitalize;
+/* Our Clients 
+--------------------------------------------------------------------------------------------------------------- */
 
+.our-clients {background: #eee;padding-top: 20px;padding-bottom: 20px;}
+.our-clients img {opacity: 0.4;filter: alpha(opacity=40); /* هذه عشان ما تسبب مشاكل في ويندوز*/transition: all .4s ease-in-out;}
+.our-clients img:hover{opacity: 1;}
+
+
+/* Loading 
+--------------------------------------------------------------------------------------------------------------- */
+
+.loading-overlay {
+    background:#f5f5f5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+.spinner {margin: 400px auto;width: 40px;height: 40px;position: relative;}
+.cube1, .cube2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+.cube1 {background-color: #6F2833;}
+.cube2 {background-color: #296F42;}
+.cube2 {-webkit-animation-delay: -0.9s;animation-delay: -0.9s;}
+
+@-webkit-keyframes sk-cubemove {
+    25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+    50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+    75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+    100% { -webkit-transform: rotate(-360deg) }
 }
 
-/* End Section Contact Us */
+@keyframes sk-cubemove {
+    25% { 
+        transform: translateX(42px) rotate(-90deg) scale(0.5);
+        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    } 50% { 
+        transform: translateX(42px) translateY(42px) rotate(-179deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    } 50.1% { 
+        transform: translateX(42px) translateY(42px) rotate(-180deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    } 75% { 
+        transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    } 100% { 
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
 
-/* Start Section  Our Clients */
-.our-clients {
-    background: #eee;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.our-clients img {
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* هذه عشان ما تسبب مشاكل في ويندوز*/
-    transition: all .4s ease-in-out;
-}
-.our-clients img:hover{
-    opacity: 1;
-}
-/* End Section  Our Clients */
+/* Scrollup 
+--------------------------------------------------------------------------------------------------------------- */
 
-/* Start Section  Footer */
-.footer {
+#scroll-top {
+    width:50px;
+    height: 40px;
+    color: #DDD;
     background-color: #6F2833;
-    font-family: navbar; 
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 9999;
+    cursor: pointer;
+    display: none;
 }
-.footer h3 {
-    margin: 30px 0 20px;
-    font-weight: bold;
-}
-.footer .three-columns {
-    overflow: hidden;
-}
-.footer .three-columns li {
-    width: 33.3333%;
-    float: left;
-    padding: 5px 0;
+#scroll-top:hover {background-color: #444;}
 
-}.footer .social-links {
-    overflow: hidden;
-    margin: 20px 0 10px;
-}
-.footer .social-links li {
-    float: left;
-    margin-right: 5px;
 
-}
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+
+.footer {background-color: #6F2833;font-family: navbar;}
+.footer h3 {margin: 30px 0 20px;font-weight: bold;}
+.footer .three-columns {overflow: hidden;}
+.footer .three-columns li {width: 33.3333%;float: left;padding: 5px 0;}
+.footer .three-columns li a {text-decoration: none;}
+.footer .three-columns li a:hover { color: white}
+.footer .social-links {overflow: hidden;margin: 20px 0 10px;}
+.footer .social-links li {float: left;margin-right: 5px;}
 .footer .social-links li a img {
     width: 30px;
     opacity: 0.5;
     filter: alpha(opacity=50); /* هذه عشان ما تسبب مشاكل في ويندوز*/
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 
-}.footer .social-links li a img:hover {
-    opacity: 1;
 }
+.footer .social-links li a img:hover {opacity: 1;}
 .footer a {color: #aaa};
 .footer a:hover {color: #fff}
-
-.footer .media h4.media-heading  {
-    color:#296F42; 
-    font-weight: bold;
-}
+.footer .media h4.media-heading  {font-weight: bold;}
 .footer img.img-thumbnail {
     width: 118px;
     height: 77.4px;
@@ -608,7 +459,6 @@ h3{color: #B1A03E;font-family:head3;}
     border: 1px solid #444;
     margin-bottom: 5px;
 }
-
 .footer .copyright {
     color: #888;
     padding: 20px 0;
@@ -616,6 +466,4 @@ h3{color: #B1A03E;font-family:head3;}
     margin-top: 100px;
     font-size: 15px;
 }
-/* End Section  Footer */
-
 

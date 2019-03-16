@@ -50,6 +50,13 @@
     .footer .media h4.media-heading {
         font-size: 16px;
     }
+    .about-features .feat-box {
+        border-radius: 12px;
+    }
+    .about-features .feat-box:hover{
+        animation: none;
+    }
+
 }
 
 /* Small Screen */
