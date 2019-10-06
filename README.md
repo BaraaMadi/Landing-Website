@@ -1,4 +1,4 @@
- <h1>Template HTML/JavaScript </h1>
+ <h1>Landing Page Website </h1>
 <br>
 <p> I have finished designing my new template using Bootstrap 3.3.7, JQuery, JavaScript, CSS3 and html5.</p>
 <p> My template contains three pages and those are a home page with many sections, about page and FAQ page.<p>
